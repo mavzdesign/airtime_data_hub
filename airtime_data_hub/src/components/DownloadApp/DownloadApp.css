@@ -1,0 +1,72 @@
+.downloadappMain_con{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    width: 100%;
+   
+}
+.downloadapp_con{
+    margin-top: 10px;
+}
+
+.left_text{
+    width: 40%;
+    margin:  auto 0;
+}
+.right_image_main_con{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image_style_con{
+    z-index: -60;
+    border-radius: 8px;
+    padding: 0px;
+    position: relative;
+    width: 100%;
+}
+.blops{
+    position: absolute;
+    left: 20px;
+    right: 0;
+    top: 0px;
+    bottom: 0px;
+    z-index: -50;
+}
+.msg{
+    position: absolute;
+    top: 0;
+    left: 400px;
+    right: 0;
+    bottom: 0;
+
+}
+.call{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+
+}
+.calltext{
+    position: absolute;
+    top: 310px;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+
+}
+
+.left_text>h1{
+    font-size: 50px;
+
+}
+.download{
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    gap: 20px;
+    
+}
