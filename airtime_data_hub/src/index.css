@@ -26,12 +26,13 @@ code {
 
 :root{
  
-  --main: #821d0c;
-  --mainVariant: #f03818;
+  --main: #14543c;
+  --mainLight: #a8c943;
+  --mainVariant: #507e43;
   --textColor: #ffff;
   --whiteColor:#ffff;
   --transition: all 400ms ease;
-  --containerWidthLg: 75%;
+  --containerWidthLg: 80%;
   --containerWidthMd: 85%;
   --containerWidthSm: 90%;
 
@@ -45,24 +46,25 @@ html{
 .btn{
   width: max-content;
   color: var(--main);
-  padding: 8px;
-  border-radius: 4px;
+  padding: 15px 30px;
+  border-radius: 6px;
   cursor: pointer;
   border: 1px solid var(--main);
   transition: var(--transition);
 }
 .btn:hover{
-  background-color: white;
-  color: var(--bgColor);
+  background-color: var(--mainLight);
+ 
   border-color: transparent;
 }
 .btn-main{
   background-color: var(--main);
-  color: var(--bgColor);
+  color: var(--textColor);
 }
+
 img{
-  display: block;
-  object-fit: cover;
+  /* display: block; */
+  /* object-fit: cover; */
   width: 100%;
 }
 .container{
