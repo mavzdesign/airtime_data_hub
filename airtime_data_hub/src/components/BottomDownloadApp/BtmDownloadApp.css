@@ -1,0 +1,28 @@
+.btmdownload_con{
+    width: 100%;
+  text-align: center;
+}
+.BtmDownloadApp_wrap{
+    margin-top: 100px;
+    background-color: rgb(228, 255, 240);
+    padding: 20px;
+}
+.btmdownload{
+    display:flex ;
+    flex-direction: column;
+    gap: 20px;
+}
+.btmdownload>p{
+    margin-bottom: 20px;
+
+}
+.dowloadbtn{
+    display: flex;
+    gap:20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+    
+
+
+}

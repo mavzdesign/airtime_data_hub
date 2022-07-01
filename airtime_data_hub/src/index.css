@@ -2,8 +2,10 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
 font-family: 'Roboto', sans-serif;
+/* font-size: 18px; */
+color: var(--main);
 }
 
 code {

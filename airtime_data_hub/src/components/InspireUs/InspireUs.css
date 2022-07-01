@@ -1,0 +1,58 @@
+.inpireCON{
+    width: 100%;
+    /* background-color: var(--mainVariant); */
+    margin-top: 100px;
+}
+.inpireUsCon{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.inspire{
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+
+}
+
+.inspire>h1{
+    font-size: 35px;
+
+}
+.inspire>h3{
+    /* font-size: 25px; */
+    padding: 10px 30px;
+    background-color: rgb(228, 255, 240);
+    width: fit-content;
+    border-radius: 20px;
+    color: var(--main);
+
+}
+.lowerbox{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    
+}
+.lowerboxeX{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-right: 1px solid gray;
+}
+.lowerboxeX2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+.bigtext{
+    font-size: 50px;
+    font-weight: 500;
+}

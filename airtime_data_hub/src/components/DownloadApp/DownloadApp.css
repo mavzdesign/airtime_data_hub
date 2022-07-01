@@ -14,10 +14,11 @@
     margin:  auto 0;
 }
 .right_image_main_con{
-    width: 50%;
+    display: none;
+    /* width: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 .image_style_con{
     z-index: -60;
