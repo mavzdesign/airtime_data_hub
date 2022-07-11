@@ -23,7 +23,7 @@ export default function Report() {
         },
         {
             exname:"Campains",
-            progress: 20
+            progress: 30
         },
         
     ]
