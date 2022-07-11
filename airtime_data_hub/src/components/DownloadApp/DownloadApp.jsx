@@ -27,12 +27,12 @@ export default function DownloadApp() {
                 </div>
 
                 <div className='right_image_main_con'>
-                    {/* <div className='image_style_con' style={{color:"white", backgroundImage:`url("${blob1}")` , backgroundRepeat:"no-repeat", backgroundSize:"auto" }}> */}
-                    <div className='image_style_con' >
-                        <img src={girlImage} alt="girl_image" style={{width:"700px"}} />
-                        <img  className='blops' src={blob1} alt="blop"style={{width:"470px"}} />
-                        <img  className='call'src={call} alt="" style={{width:"100px"}} />
-                        <img className='calltext' src={callText} alt="" style={{width:"100px"}} />
+                    <div className='image_style_con' style={{color:"white", backgroundImage:`url("${blob1}")` , backgroundRepeat:"no-repeat", backgroundSize:"100%" }}>
+                    {/* <div className='image_style_con' > */}
+                        <img src={girlImage} alt="girl_image" style={{width:"100%", display:"block"}} />
+                        {/* <img  className='blops' src={blob1} alt="blop"style={{width:"100%"}} /> */}
+                        {/* <img  className='call'src={call} alt="" style={{width:"100px"}} /> */}
+                        <img className='call' src={callText} alt="" style={{width:"100px"}} />
                         <img className='msg' src={msg} alt="" style={{width:"100px"}} />
 
 

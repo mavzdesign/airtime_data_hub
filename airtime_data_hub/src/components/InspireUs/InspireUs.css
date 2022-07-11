@@ -56,3 +56,31 @@
     font-size: 50px;
     font-weight: 500;
 }
+@media screen and (max-width: 900px){
+    .inpireUsCon{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        /* margin: 0 auto; */
+    }
+    .bigtext{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .inspire>h3{
+        margin: 0 auto;
+    }
+    .inspire{
+        width: 100%;
+    }
+    .lowerbox{
+        justify-content: center;
+        align-items: center;
+    }
+    .lowerboxeX{
+        padding: 10px;
+    }
+
+
+}

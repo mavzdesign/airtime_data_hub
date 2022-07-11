@@ -3,7 +3,7 @@
     display: flex;
 }
 .about_us_main{
-    margin-top: 150px;
+    margin-top: 100px;
 }
 .about_image{
     width: 50%;
@@ -32,4 +32,22 @@
     border-radius: 20px;
     width: fit-content;
     
+}
+@media screen and (max-width: 900px){
+    .image_about{
+        flex-direction: column;
+    }
+    .about_image,.about_text{
+        width: 100%;
+        text-align: center;
+    }
+    .who{
+        margin: 0 auto;
+    }
+    .about_text>h1{
+        margin: 0 auto;
+    }
+
+
+
 }

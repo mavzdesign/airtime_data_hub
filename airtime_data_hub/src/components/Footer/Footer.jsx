@@ -63,6 +63,7 @@ export default function Footer() {
                 <p>Airtimedatahub is a one-stop shop that enables users to convert airtime to instant cash, buy affordable data bundles with a broader focus on making users day to day activities seamless.</p>
                 <p>Copyright © 2022. Nurenta Global Concept Ltd. All Rights Reserved.</p>
                 <p>AirtimeDataHub Powered by Codefixbug Limited.</p>
+                <a href='https://www.freepik.com/vectors/data-report'>Data report vector created by katemangostar - www.freepik.com</a>
 
                 </div>
 

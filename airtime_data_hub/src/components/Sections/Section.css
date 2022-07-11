@@ -39,7 +39,7 @@
     padding-top: 40px;
 }
 .section_con{
-    margin-top: 150px;
+    margin-top: 100px;
 }
 .section_one{
     display: flex;
@@ -48,4 +48,33 @@
   
    margin-bottom: 20px;
    text-align: center;
+}
+@media screen and (max-width: 900px){
+    .sectionTwo_main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+     
+    }
+    .sectionTwo_one>span{
+        margin: 0 auto;
+    }
+    
+
+
+}
+
+@media screen and (max-width: 600px){
+    .section_two{
+        grid-template-columns: 100%;
+    }
+    .section_grid{
+        text-align: center;
+    }
+    .sectionTwo_two{
+        grid-template-columns: 100%;
+    }
 }
