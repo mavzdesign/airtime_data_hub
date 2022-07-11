@@ -1,0 +1,30 @@
+.reportWrapper{
+    margin-top: 100px;
+    width: 100%;
+}
+.reportCon{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.reportImage>img{
+    width: 100%;
+}
+.repotText{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-right: 20px;
+}
+
+@media screen and (max-width: 900px){
+    
+.reportCon{
+    grid-template-columns: 100%;
+    
+}
+.repotText>h1{
+    text-align: center;
+}
+}

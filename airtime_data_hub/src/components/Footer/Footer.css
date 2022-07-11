@@ -1,0 +1,74 @@
+.footerWrap{
+    margin-top: 100px;
+}
+.footer_con{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+ 
+
+}
+.footer_top{
+    display: grid;
+  grid-template-columns: 30% 35% 35%;
+}
+.footer_bottom{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.middle_content{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 10px;
+}
+.middle_content>ul>li{
+    margin-bottom: 20px;
+}
+
+.buttom_logo{
+    padding: 20px;
+}
+.social_contact{
+    padding: 20px;
+    text-align: end;
+}
+.social_contact,.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.social_>span{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    font-size: 25px;
+
+    /* display: grid;
+    grid-template-columns: 30% 30% 30%; */
+}
+
+@media screen and (max-width: 700px){
+    .footer_top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .middle_content{
+        gap: 20px;
+    }
+    .social_contact{
+        text-align: center;
+    }
+    .social_>span{
+        justify-content: center;
+        align-items: center;
+    }
+
+}

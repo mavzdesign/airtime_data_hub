@@ -2,8 +2,10 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
 font-family: 'Roboto', sans-serif;
+/* font-size: 18px; */
+color: var(--main);
 }
 
 code {
@@ -70,6 +72,7 @@ img{
 .container{
   width: var(--containerWidthLg);
   margin: 0 auto;
+  max-width: 1152px;
   
 
 }
@@ -78,6 +81,9 @@ img{
   .container{
     width: var(--containerWidthMd);
   }
+  .btn{
+    padding: 10px 15px;
+  }
     
 
 }
@@ -85,6 +91,9 @@ img{
 @media screen and (max-width: 900px){
   .container{
     width: var(--containerWidthSm);
+  }
+  .btn{
+    padding: 10px 15px;
   }
     
 
