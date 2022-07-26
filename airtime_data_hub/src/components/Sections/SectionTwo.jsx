@@ -2,6 +2,7 @@ import React from 'react'
 import './Section.css'
 import { IoIosWallet, IoIosGlobe, IoMdLock, IoMdPerson } from 'react-icons/io';
 import { RiArrowRightSLine} from 'react-icons/ri';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -59,7 +60,7 @@ export default function SectionTwo() {
 
           <div className='sectionTwo_one'>
             <h1>Unique experience for you</h1>
-            <span className='btn'>Know more <RiArrowRightSLine/> </span>
+            <NavLink to="/about_nurenta"><span className='btn'>Know more <RiArrowRightSLine/> </span></NavLink> 
             
 
           </div>

@@ -54,7 +54,7 @@ html{
   cursor: pointer;
   border: 1px solid var(--main);
   transition: var(--transition);
-  font-weight: 500;
+  /* font-weight: 500; */
 }
 .btn:hover{
   background-color: var(--mainLight);
