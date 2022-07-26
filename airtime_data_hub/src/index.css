@@ -29,10 +29,11 @@ code {
 :root{
  
   --main: #14543c;
-  --mainLight: #a8c943;
+  --mainLight: #A8CF44;
   --mainVariant: #507e43;
   --textColor: #ffff;
   --whiteColor:#ffff;
+  --bgvariant:rgb(228, 255, 240);
   --transition: all 400ms ease;
   --containerWidthLg: 80%;
   --containerWidthMd: 85%;
@@ -48,7 +49,7 @@ html{
 .btn{
   width: max-content;
   color: var(--main);
-  padding: 15px 30px;
+  padding: 15px 25px;
   border-radius: 6px;
   cursor: pointer;
   border: 1px solid var(--main);
@@ -71,7 +72,8 @@ img{
 .container{
   width: var(--containerWidthLg);
   margin: 0 auto;
-  max-width: 1152px;
+  max-width: 1200px;
+  /* max-width: 2000px; */
   
 
 }

@@ -2,10 +2,12 @@ import React from 'react'
 import "./Footer.css"
 import nurenta from "../../assets/nurenta.png"
 import { FaFacebookSquare, FaTwitter, FaInstagramSquare } from 'react-icons/fa';
+import { NavLink } from "react-router-dom";
 
 export default function Footer() {
   return (
     <div className='footerWrap'>
+        
         <div className='container'>
             <div className='footer_con'>
 
@@ -18,19 +20,19 @@ export default function Footer() {
 
                     <div className='middle_content'>
                         <ul>
-                            <li><h4>About Us</h4></li>
-                            <li>About AirtimeDataHub</li>
-                            <li>Terms and Condition</li>
-                            <li>Privacy Policy</li>
-                            <li>How It Works</li>
+                            <li> <h4>About Us</h4></li>
+                            <li> <NavLink to="/about_nurenta"> About AirtimeDataHub</NavLink> </li>
+                          <li> <NavLink to="/terms_condition"> Terms and Condition  </NavLink> </li>
+                           <li> <NavLink to="/privacy">Privacy Policy  </NavLink> </li>
+                            <li> <NavLink to="/how_it_works ">How It Works </NavLink> </li>
                            
                         </ul>
                         <ul>
                             <li><h4>Our Services</h4></li>
-                            <li>Airtime Purchase</li>
-                            <li>Airtime to cash</li>
-                            <li>Bills Payment</li>
-                            <li>Data Topup</li>
+                            <li> Airtime Purchase  </li>
+                            <li>  Airtime to cash  </li>
+                            <li>  Bills Payment</li>
+                            <li>  Data Topup </li>
                             
                         </ul>
 
@@ -63,7 +65,7 @@ export default function Footer() {
                 <p>Airtimedatahub is a one-stop shop that enables users to convert airtime to instant cash, buy affordable data bundles with a broader focus on making users day to day activities seamless.</p>
                 <p>Copyright © 2022. Nurenta Global Concept Ltd. All Rights Reserved.</p>
                 <p>AirtimeDataHub Powered by Codefixbug Limited.</p>
-                <a href='https://www.freepik.com/vectors/data-report'>Data report vector created by katemangostar - www.freepik.com</a>
+                {/* <a href='https://www.freepik.com/vectors/data-report'>Data report vector created by katemangostar - www.freepik.com</a> */}
 
                 </div>
 

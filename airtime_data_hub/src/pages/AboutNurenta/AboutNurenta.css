@@ -1,0 +1,41 @@
+
+
+.AboutNurenta{
+    margin-top: 80px;
+}
+.image_style_con{
+    position: relative;
+}
+.top_section{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    /* position: relative; */
+}
+
+.second_section{
+    margin-top: 50px;
+    background-color: var(--main);
+    color: var(--whiteColor);
+    /* color: var(--main);
+    background-color: #f9f9f9; */
+    padding: 20px 0px;
+}
+.about_nu>h1{
+    background-color: var(--bgvariant);
+    width: fit-content;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    color: var(--main);
+    
+}
+/* .about_nu{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+} */
+
+

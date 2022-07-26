@@ -2,25 +2,33 @@
 import './Navbar.css'
 import nurenta from "../../assets/nurenta.png"
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
-// import InboxIcon from '@mui/icons-material/MoveToInbox';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-// import AiOutlineMail from '@mui/icons-material/Mail';
-import {AiOutlineMenu, AiOutlineMail, AiOutlineInbox} from 'react-icons/ai';
+import {AiOutlineMenu} from 'react-icons/ai';
 import Toolbar from '@mui/material/Toolbar';
+import { useState, useEffect } from 'react';
+import Banner from '../Banner/Banner';
+import { NavLink  } from "react-router-dom";
+
+
 
 
 export default function Navbar() {
+    const changeBackground = () =>{
+        if (window.scrollY >= 80 ){
+          setFlexNavbar(true)
+        }else{
+          setFlexNavbar(false);
+        }
+    
+      };
+      window.addEventListener('scroll',changeBackground);
+
+      const [flexNavbar, setFlexNavbar]= useState(false)
 
 
 const drawerWidth = 240;
@@ -36,9 +44,9 @@ const drawerWidth = 240;
   const drawer = (
     <div>
       <Toolbar />
-      <div className='logocon'>
+    <div className='logocon'>
                     <img src={nurenta} alt="logo"  style={{width:"150px"}}/>
-                </div>
+    </div>
                 <Divider/>
       <div className='signup-signin'>
                     <span className=' btn btn-main'> Sign in</span>
@@ -47,8 +55,28 @@ const drawerWidth = 240;
                 </div>
     </div>
   );
+  const [navbackround, setnavbackround] = useState(false)
 
-  const container = window !== undefined ? () => window().document.body : undefined;
+//   const container = window !== undefined ? () => window().document.body : undefined;
+useEffect(() => {
+    handleScroll();
+
+  
+
+ 
+  
+}, [])
+
+
+const handleScroll = () => {
+       
+    if (window.scrollY > 100) {
+        setnavbackround(true)
+    } else {
+        setnavbackround(false)
+    }
+}
+
 
 
   
@@ -58,7 +86,7 @@ const drawerWidth = 240;
 
 
   return (
-    <div className='navbarcon'>
+    <div className= {flexNavbar ? "navbarconx" : "navbarcon" }>
         <div className='container'>
             <div className='mobile_menu'> 
             <Box sx={{ display: 'flex', backgroundColor:"white" }}>
@@ -75,6 +103,10 @@ const drawerWidth = 240;
                     }}
                 >
                     <Toolbar>
+                    
+                    <div style={{display:"flex", justifyContent:"flex-start", width:"100%", padding:"10px"}}>
+                    <img src={nurenta} alt="logo"  style={{width:"100px"}}/>
+                    </div>
                     <IconButton
                         color="inherit"
                         aria-label="open drawer"
@@ -84,12 +116,7 @@ const drawerWidth = 240;
                     >
                         <AiOutlineMenu fontSize={30}  style={{color:"var(--main)"}}/>
                     </IconButton>
-                    <div style={{display:"flex", justifyContent:"flex-end", width:"100%", padding:"10px"}}>
-                    <img src={nurenta} alt="logo"  style={{width:"100px"}}/>
-                    </div>
-                    {/* <Typography variant="h6" noWrap component="div">
-                        Responsive drawer
-                    </Typography> */}
+                  
                     </Toolbar>
                 </AppBar>
                 <Box
@@ -138,6 +165,15 @@ const drawerWidth = 240;
             <div className='logo_sign_con'>
                 <div className='logocon'>
                     <img src={nurenta} alt="logo"  style={{width:"120px"}}/>
+                </div>
+                <div className='logo_list'>
+                    <ul>
+                        <NavLink  to="/"><li>Home</li></NavLink >
+                        <NavLink to="/about_nurenta" ><li>About</li></NavLink >
+                        <NavLink to="/how_it_works" ><li> How it works</li></NavLink >
+                        <NavLink to="/faq" ><li> FAQs</li></NavLink >
+                        <NavLink to="/contact_us" ><li> Contact us</li></NavLink >
+                    </ul>
                 </div>
                 <div className='signup-signin'>
                     <span className=' btn btn-main'> Sign in</span>

@@ -12,13 +12,56 @@
 .logo_sign_con{
     display: flex;
     justify-content: space-between;
-    height: 100px;
-    padding: 20px;
+    height: 80px;
+    padding: 10px;
     gap: 10px;
-    /* position: fixed;
-    background-color: aqua;
-    width: 100%; */
+  
     
+}
+.logo_list>ul{
+    display: flex;
+    gap: 30px;
+   
+  
+    
+
+}
+.logo_list>ul>a{
+    color: var(--main);
+
+}
+.logo_list{
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.navbarcon{
+ width: 100%;
+ background: var(--whiteColor);
+ transition: var(--transition);
+  
+
+    
+
+}
+.navbarconx{
+    position: fixed;
+    /* background-color: aqua; */
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--whiteColor);
+    height: 80px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    z-index: 2;
+    transition: var(--transition);
+  
+
+    
+
 }
 .mobile_menu{
     display: none;
