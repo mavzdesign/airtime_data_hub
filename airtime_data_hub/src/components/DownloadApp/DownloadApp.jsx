@@ -30,7 +30,7 @@ export default function DownloadApp() {
                 </div>
 
                 <div className='right_image_main_con'>
-                    <div className='image_style_con' >
+                    <div className='image_stylex_con' >
                         <img src={mockUp} alt="" />
 
                     </div>

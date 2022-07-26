@@ -97,3 +97,14 @@
 .theflowRight>h1, .theflow>h1{
     font-size: 30px;
 }
+@media screen and (max-width: 900px){
+    .how>h1{
+        margin: 0px;
+    }
+    .css-1v5u2yv{
+        padding: 0px !important;
+    }
+
+
+
+}

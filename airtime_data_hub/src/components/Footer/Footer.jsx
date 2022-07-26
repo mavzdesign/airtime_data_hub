@@ -14,7 +14,7 @@ export default function Footer() {
                 <div className='footer_top'>
 
                     <div className='buttom_logo'>
-                        <img src={nurenta} alt="buttom logo"  style={{width:"150px"}}/>
+                    <NavLink to="/"><img src={nurenta} alt="logo"  style={{width:"150px"}}/></NavLink> 
                        
                     </div>
 

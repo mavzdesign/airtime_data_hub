@@ -6,11 +6,21 @@
     /* background: linear-gradient(90deg, #14543A 0%, #A8CF44 100%); */
 
     padding: 100px;
-    margin-top: 80px;
+    /* margin-top: 80px; */
   display: flex;
   justify-content: center;
   align-items: center;
 color: var(--whiteColor);
 font-size: 25px;
+text-align: center;
    
+}
+@media screen and (max-width: 900px){
+
+  .banner_text{
+    text-align: center;
+  }
+  .banner_text{
+    font-size: 15px;
+  }
 }

@@ -37,7 +37,7 @@ code {
   --transition: all 400ms ease;
   --containerWidthLg: 80%;
   --containerWidthMd: 85%;
-  --containerWidthSm: 90%;
+  --containerWidthSm: 95%;
 
 }
 html{
@@ -54,6 +54,7 @@ html{
   cursor: pointer;
   border: 1px solid var(--main);
   transition: var(--transition);
+  font-weight: 500;
 }
 .btn:hover{
   background-color: var(--mainLight);
