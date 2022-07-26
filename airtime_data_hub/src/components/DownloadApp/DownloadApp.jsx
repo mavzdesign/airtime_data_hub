@@ -1,10 +1,13 @@
 import React from 'react'
 import './DownloadApp.css'
 import girlImage from '../../assets/girlImage.png'
-import call from '../../assets/call.gif'
+// import call from '../../assets/call.gif'
 import callText from '../../assets/callText.gif'
 import msg from '../../assets/msg.gif'
 import blob1 from '../../assets/blob2.svg'
+import landing from '../../assets/landing.svg'
+import mockUp from '../../assets/mk.svg'
+
 import playstore from '../../assets/playstore.svg'
 import { FaApple } from 'react-icons/fa';
 
@@ -27,18 +30,21 @@ export default function DownloadApp() {
                 </div>
 
                 <div className='right_image_main_con'>
-                    <div className='image_style_con' style={{color:"white", backgroundImage:`url("${blob1}")` , backgroundRepeat:"no-repeat", backgroundSize:"100%" }}>
-                    {/* <div className='image_style_con' > */}
+                    <div className='image_style_con' >
+                        <img src={mockUp} alt="" />
+
+                    </div>
+                    {/* <div className='image_style_con' style={{color:"white", backgroundImage:`url("${blob1}")` , backgroundRepeat:"no-repeat", backgroundSize:"100%" }}>
                         <img src={girlImage} alt="girl_image" style={{width:"100%", display:"block"}} />
-                        {/* <img  className='blops' src={blob1} alt="blop"style={{width:"100%"}} /> */}
-                        {/* <img  className='call'src={call} alt="" style={{width:"100px"}} /> */}
                         <img className='call' src={callText} alt="" style={{width:"100px"}} />
                         <img className='msg' src={msg} alt="" style={{width:"100px"}} />
 
 
-                    </div>
+                    </div>  */}
                 
                 </div>
+                                     {/* <img  className='blops' src={blob1} alt="blop"style={{width:"100%"}} /> */}
+                        {/* <img  className='call'src={call} alt="" style={{width:"100px"}} /> */}
 
             </div>
           

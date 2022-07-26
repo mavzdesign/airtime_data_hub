@@ -1,6 +1,12 @@
 .footerWrap{
-    margin-top: 100px;
-}
+    padding-top: 100px;
+    /* background-color: #f9f9f9; */
+    /* -webkit-box-shadow: 0px 2px 11px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 11px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 11px 0px rgba(0,0,0,0.75); */
+    color: var(--main);
+  
+}    
 .footer_con{
     display: flex;
     flex-direction: column;
@@ -29,6 +35,9 @@
 .middle_content>ul>li{
     margin-bottom: 20px;
 }
+.middle_content>ul>li>a{
+    color: var(--main);
+}
 
 .buttom_logo{
     padding: 20px;
@@ -52,6 +61,7 @@
     /* display: grid;
     grid-template-columns: 30% 30% 30%; */
 }
+
 
 @media screen and (max-width: 700px){
     .footer_top{

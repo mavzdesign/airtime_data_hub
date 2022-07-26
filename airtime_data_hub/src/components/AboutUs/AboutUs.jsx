@@ -1,6 +1,6 @@
 import React from 'react'
 import './AboutUs.css'
-import aboutImage from '../../assets/convert.svg'
+import aboutImage from '../../assets/landing.svg'
 import { MdKeyboardArrowRight } from 'react-icons/md';
 
 

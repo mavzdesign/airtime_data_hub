@@ -1,6 +1,6 @@
 import React from 'react'
 import "./InspireUs.css"
-import inspire from '../../assets/inspire.gif'
+import inspire from '../../assets/convert.svg'
 
 export default function InspireUs() {
 
