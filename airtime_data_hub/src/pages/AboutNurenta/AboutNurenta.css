@@ -79,4 +79,12 @@
     }
 
 }
+@media screen and (max-width: 900px){
+    .about_nu{
+        text-align: center;
+    }
+
+
+}
+
 
