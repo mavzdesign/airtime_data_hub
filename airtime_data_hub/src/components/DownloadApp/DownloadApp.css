@@ -63,7 +63,7 @@
 }
 .msg{
     position: absolute;
-    top: 20px;
+    top: 10px;
     /* left: 0px; */
     right: 0;
     bottom: 0;
@@ -71,8 +71,8 @@
 }
 .call{
     position: absolute;
-    top: 20px;
-    left: 0px;
+    top: 10px;
+    left: 20px;
     right: 0;
     bottom: 0;
 
@@ -105,13 +105,15 @@
         flex-direction: column;
         gap: 40px;
     }
-    .left_text>h1{
-        /* font-size: 30px; */
-    }
+  
       
   
   }
 @media screen and (max-width: 900px){
+    .left_text>h1{
+        font-size: 50px;
+        line-height: 60px;
+    }
     .right_image_main_con{
         display: none;
     }
@@ -137,8 +139,9 @@
 
 }
 @media screen and (max-width: 600px) {
-    /* .downloadapp_con{
-        margin-top: 0px;
-    } */
+    .left_text>h1{
+        font-size: 40px;
+        line-height: 60px;
+    }
     
 }

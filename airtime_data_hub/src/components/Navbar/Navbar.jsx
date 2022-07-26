@@ -45,14 +45,23 @@ const drawerWidth = 240;
     <div>
       <Toolbar />
     <div className='logocon'>
-                    <img src={nurenta} alt="logo"  style={{width:"150px"}}/>
+                   <NavLink to="/"><img src={nurenta} alt="logo"  style={{width:"150px"}}/></NavLink> 
     </div>
-                <Divider/>
+        <Divider/>
+            <div className='sidenavmob'>
+                <ul>
+                    <NavLink  to="/"><li>Home</li></NavLink >
+                    <NavLink to="/about_nurenta" ><li>About</li></NavLink >
+                    <NavLink to="/how_it_works" ><li> How it works</li></NavLink >
+                    <NavLink to="/faq" ><li> FAQs</li></NavLink >
+                    <NavLink to="/contact_us" ><li> Contact us</li></NavLink >
+                </ul>
+            </div>
       <div className='signup-signin'>
                     <span className=' btn btn-main'> Sign in</span>
                     <span className='btn'> Sign up</span>
                 
-                </div>
+        </div>
     </div>
   );
   const [navbackround, setnavbackround] = useState(false)
@@ -86,107 +95,119 @@ const handleScroll = () => {
 
 
   return (
-    <div className= {flexNavbar ? "navbarconx" : "navbarcon" }>
-        <div className='container'>
-            <div className='mobile_menu'> 
-            <Box sx={{ display: 'flex', backgroundColor:"white" }}>
-                <CssBaseline />
-                <AppBar
-                    position="fixed"
-                    sx={{
-                    width: { sm: `calc(100% - ${drawerWidth}px)`
-                    , backgroundColor:"white"
-                   
-                    
-                    },
-                    ml: { sm: `${drawerWidth}px` },
-                    }}
-                >
-                    <Toolbar>
-                    
-                    <div style={{display:"flex", justifyContent:"flex-start", width:"100%", padding:"10px"}}>
-                    <img src={nurenta} alt="logo"  style={{width:"100px"}}/>
+
+    <div>
+        <div className= {flexNavbar ? "navbarconx" : "navbarcon" }>
+            <div className='container'>
+            
+        
+                <div className='logo_sign_con'>
+                    <div className='logocon'>
+                    <NavLink to="/"><img src={nurenta} alt="logo"  style={{width:"120px"}}/></NavLink> 
                     </div>
-                    <IconButton
-                        color="inherit"
-                        aria-label="open drawer"
-                        edge="start"
-                        onClick={handleDrawerToggle}
-                        sx={{ mr: 2, display: { sm: 'none' } }}
-                    >
-                        <AiOutlineMenu fontSize={30}  style={{color:"var(--main)"}}/>
-                    </IconButton>
-                  
-                    </Toolbar>
-                </AppBar>
-                <Box
-                    component="nav"
-                    sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
-                    aria-label="mailbox folders"
-                >
-                    {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
-                    <Drawer
-                    //   container={container}
-                    variant="temporary"
-                    open={mobileOpen}
-                    onClose={handleDrawerToggle}
-                    ModalProps={{
-                        keepMounted: true, // Better open performance on mobile.
-                    }}
-                    sx={{
-                        display: { xs: 'block', sm: 'none' },
-                        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
-                    }}
-                    >
-                    {drawer}
-                    </Drawer>
-                    <Drawer
-                    variant="permanent"
-                    sx={{
-                        display: { xs: 'none', sm: 'block' },
-                        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
-                    }}
-                    open
-                    >
-                    {drawer}
-                    </Drawer>
-                </Box>
-                <Box
-                    component="main"
-                    sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
-                >
-                    <Toolbar />
-                
-                </Box>
-            </Box>
+                    <div className='logo_list'>
+                        <ul>
+                            <NavLink  to="/"><li>Home</li></NavLink >
+                            <NavLink to="/about_nurenta" ><li>About</li></NavLink >
+                            <NavLink to="/how_it_works" ><li> How it works</li></NavLink >
+                            <NavLink to="/faq" ><li> FAQs</li></NavLink >
+                            <NavLink to="/contact_us" ><li> Contact us</li></NavLink >
+                        </ul>
+                    </div>
+                    <div className='signup-signin'>
+                        <span className=' btn btn-main'> Sign in</span>
+                        <span className='btn'> Sign up</span>
+                    
+                    </div>
+
+                </div>
+            
+
 
             </div>
-      
-            <div className='logo_sign_con'>
-                <div className='logocon'>
-                    <img src={nurenta} alt="logo"  style={{width:"120px"}}/>
-                </div>
-                <div className='logo_list'>
-                    <ul>
-                        <NavLink  to="/"><li>Home</li></NavLink >
-                        <NavLink to="/about_nurenta" ><li>About</li></NavLink >
-                        <NavLink to="/how_it_works" ><li> How it works</li></NavLink >
-                        <NavLink to="/faq" ><li> FAQs</li></NavLink >
-                        <NavLink to="/contact_us" ><li> Contact us</li></NavLink >
-                    </ul>
-                </div>
-                <div className='signup-signin'>
-                    <span className=' btn btn-main'> Sign in</span>
-                    <span className='btn'> Sign up</span>
-                
-                </div>
-
-            </div>
-          
-
-
         </div>
 
+        <div className='container'>
+            <div className='mobile_menu'> 
+                <Box sx={{ display: 'flex', backgroundColor:"white" }}>
+                    <CssBaseline />
+                    <AppBar
+                        position="fixed"
+                        sx={{
+                        width: { sm: `calc(100% - ${drawerWidth}px)`
+                        , backgroundColor:"white"
+                    
+                        
+                        },
+                        ml: { sm: `${drawerWidth}px` },
+                        }}
+                    >
+                        <Toolbar>
+                        
+                        <div style={{display:"flex", justifyContent:"flex-start", width:"100%", padding:"10px"}}>
+                        <img src={nurenta} alt="logo"  style={{width:"100px"}}/>
+                        </div>
+                    
+
+                        <IconButton
+                            color="inherit"
+                            aria-label="open drawer"
+                            edge="start"
+                            onClick={handleDrawerToggle}
+                            sx={{ mr: 2, display: { sm: 'none' } }}
+                        >
+                            <AiOutlineMenu fontSize={30}  style={{color:"var(--main)"}}/>
+                        </IconButton>
+                    
+                        </Toolbar>
+                    </AppBar>
+                    <Box
+                        component="nav"
+                        sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
+                        aria-label="mailbox folders"
+                    >
+                    
+                        <Drawer
+                        //   container={container}
+                        variant="temporary"
+                        open={mobileOpen}
+                        onClose={handleDrawerToggle}
+                        ModalProps={{
+                            keepMounted: true, // Better open performance on mobile.
+                        }}
+                        sx={{
+                            display: { xs: 'block', sm: 'none' },
+                            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+                        }}
+                        >
+                        {drawer}
+                        </Drawer>
+                        <Drawer
+                        variant="permanent"
+                        sx={{
+                            display: { xs: 'none', sm: 'block' },
+                            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+                        }}
+                        open
+                        >
+                        {drawer}
+                        </Drawer>
+                    </Box>
+                    <Box
+                        component="main"
+                        sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
+                    >
+                        <Toolbar />
+                    
+                    </Box>
+                </Box>
+
+            </div>
+
+        </div>
+       
+
     </div>
+   
   )
 }

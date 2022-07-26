@@ -5,6 +5,8 @@
 }
 .image_style_con{
     position: relative;
+    height: fit-content;
+    margin: auto;
 }
 .top_section{
     display: grid;
@@ -38,4 +40,43 @@
     flex-direction: column;
 } */
 
+@media screen and (max-width: 1346px){
+    .image_style_con{
+        display: none;
+    }
+    .top_section{
+        grid-template-columns: 100%;
+    }
+    .about_nu>h1{
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .flow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-direction: column-reverse;
+      
+
+    }
+    .flowRight{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+
+
+    }
+    .theflow,.theflowRight{
+        text-align: center;
+
+    }
+    .theflowRight::before,.theflow::after{
+        display: none;
+
+    }
+
+}
 

@@ -18,6 +18,15 @@ export default function ContactUs() {
           <div className='mapCon'>
             <div className='container'>
               <div className='conform'>
+
+                <div className='MainOffice'>
+                  <h1>Main Office Location</h1>
+                  <ul className='addressbythe_side'>
+                    <li>Givt mobile, Yomade shopping complex, by Awoyaya bus stop, lekki-epe Expressway, Awoyaya, Lagos</li>
+                    <li>07062242007</li>
+                    <li>support@airtimedatahub.com</li>
+                  </ul>
+                </div>
               
                 <div className='mapnurenta'> 
                 <form action="
@@ -37,14 +46,7 @@ export default function ContactUs() {
 
                 </div>
 
-                <div className='MainOffice'>
-                  <h1>Main Office Location</h1>
-                  <ul className='addressbythe_side'>
-                    <li>Givt mobile, Yomade shopping complex, by Awoyaya bus stop, lekki-epe Expressway, Awoyaya, Lagos</li>
-                    <li>07062242007</li>
-                    <li>support@airtimedatahub.com</li>
-                  </ul>
-                </div>
+                
 
               </div>
              

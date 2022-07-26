@@ -6,3 +6,12 @@
 .faq_sections{
     padding-top: 50px;
 }
+@media screen and (max-width: 900px){
+    .faq_sections>h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .faq_sections>section>h3{
+        text-align: center;
+    }
+}
