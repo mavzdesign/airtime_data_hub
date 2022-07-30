@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useEffect} from  'react'
 import Banner from '../../components/Banner/Banner'
 import Footer from '../../components/Footer/Footer'
 import Navbar from '../../components/Navbar/Navbar'
@@ -11,6 +11,12 @@ import BtmDownloadApp from '../../components/BottomDownloadApp/BtmDownloadApp'
 
 
 export default function HowItWorks() {
+    useEffect(() => {
+    
+        window.scrollTo(0, 0);
+      
+     
+      }, [])
     const Flow = ({ headerText, mainText }) => {
         return (
             <div className='theflow' >

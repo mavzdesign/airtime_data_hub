@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import blob1 from '../../assets/blob2.svg'
 import girlImage from '../../assets/girlImage.png'
@@ -12,6 +12,12 @@ import { MdOutlinePhonelink } from 'react-icons/md';
 
 
 export default function AboutNurenta() {
+    useEffect(() => {
+    
+        window.scrollTo(0, 0);
+      
+     
+      }, [])
     const Flow = ({ headerText, mainText }) => {
         return (
             <div className='theflow' >
