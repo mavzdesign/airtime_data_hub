@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useEffect} from 'react'
 import AboutUs from '../components/AboutUs/AboutUs'
 import BtmDownloadApp from '../components/BottomDownloadApp/BtmDownloadApp'
 import DownloadApp from '../components/DownloadApp/DownloadApp'
@@ -11,6 +11,13 @@ import SectionTwo from '../components/Sections/SectionTwo'
 import './Home.css'
 
 export default function Home() {
+  useEffect(() => {
+    
+    window.scrollTo(0, 0);
+  
+ 
+  }, [])
+  
   return (
     
     <div>

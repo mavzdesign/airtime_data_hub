@@ -1,10 +1,16 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Banner from '../../components/Banner/Banner'
 import Footer from '../../components/Footer/Footer'
 import Navbar from '../../components/Navbar/Navbar'
 import './TermsCondition.css'
 
 export default function TermsCondition() {
+  useEffect(() => {
+    
+    window.scrollTo(0, 0);
+  
+ 
+  }, [])
   return (
     <div>
     <Navbar/>
@@ -21,7 +27,7 @@ export default function TermsCondition() {
         <section>
           <h4>1. ACCEPTANCE OF TERMS</h4>
           <p>By using the service in any way, you agree to comply with the TOU and any applicable posted guidelines for all services, which may change from time to time. Should you object to any term or condition of the TOU, any guidelines, or any subsequent modifications thereto or become dissatisfied with  AirtimeDataHub in any way, your only recourse is to immediately discontinue use of your AirtimeDataHub account.
-Should any infraction arise,  AirtimeDataHub has the right but is not obligated to strictly enforce the TOU through self-help, active investigation, litigation and prosecution.</p>
+          Should any infraction arise,  AirtimeDataHub has the right but is not obligated to strictly enforce the TOU through self-help, active investigation, litigation and prosecution.</p>
 
         </section>
         <section>

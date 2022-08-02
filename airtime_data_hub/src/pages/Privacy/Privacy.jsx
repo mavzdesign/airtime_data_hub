@@ -1,10 +1,18 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Banner from '../../components/Banner/Banner'
 import Footer from '../../components/Footer/Footer'
 import Navbar from '../../components/Navbar/Navbar'
 import './Privacy.css'
 
+
 export default function Privacy() {
+  useEffect(() => {
+    
+    window.scrollTo(0, 0);
+  
+ 
+  }, [])
+  
   return (
     <div>
       <Navbar/>
@@ -12,6 +20,9 @@ export default function Privacy() {
       <div className='container'>
         <div className='privacyCon'>
           <section>
+
+
+      
             <h1>Privacy policy</h1>
             <p>Nurenta Global Concept Ltd built the AirtimeDataHub app as a Commercial app. This SERVICE is provided by Nurenta Global Concept Ltd and is intended for use as is.</p>
             <p>If you choose to use our Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that we collect is used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.</p>
